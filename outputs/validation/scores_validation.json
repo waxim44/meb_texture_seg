@@ -1,0 +1,42 @@
+{
+  "ntt": {
+    "stage_3": {
+      "d_same_texture": 0.7457,
+      "d_diff_texture": 0.7856,
+      "ntt_score": 1.0535
+    },
+    "stage_2": {
+      "d_same_texture": 0.6347,
+      "d_diff_texture": 0.6503,
+      "ntt_score": 1.0245
+    },
+    "stage_1": {
+      "d_same_texture": 0.5469,
+      "d_diff_texture": 0.543,
+      "ntt_score": 0.9928
+    }
+  },
+  "stability": {
+    "stage_3": {
+      "noise": 0.8695,
+      "rotation": 0.7257,
+      "contrast": 0.998
+    },
+    "stage_2": {
+      "noise": 0.6411,
+      "rotation": 0.492,
+      "contrast": 0.9908
+    },
+    "stage_1": {
+      "noise": 0.6315,
+      "rotation": 0.6146,
+      "contrast": 0.9971
+    }
+  },
+  "recommended_stage": "stage_3",
+  "checkpoints_loaded": [
+    "orig",
+    "0.3",
+    "1.0"
+  ]
+}

@@ -1,0 +1,61 @@
+# Données et checkpoints lourds
+data/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+
+# Outputs générés (optionnel - décommente si tu veux les exclure)
+# outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Environnements virtuels
+venv/
+env/
+.env
+.venv
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Hydra / multirun
+multirun/
+.hydra/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Wandb / MLflow
+wandb/
+mlruns/
+
+# Numpy / temporary
+*.npy
+*.npz

@@ -1,0 +1,9 @@
+name: "texturesam"
+checkpoint: "checkpoints/sam2.1_hiera_small_1.pt"
+stage: 4
+stability_threshold: 0.1
+points_per_side: 64
+pred_iou_thresh: 0.88
+min_mask_region_area: 100
+image_size: 1024
+normalize: true

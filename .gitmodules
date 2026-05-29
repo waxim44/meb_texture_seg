@@ -1,0 +1,3 @@
+[submodule "TextureSAM"]
+	path = TextureSAM
+	url = https://github.com/Scientific-Computing-Lab/TextureSAM.git
