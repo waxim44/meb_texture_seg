@@ -1,0 +1,62 @@
+{
+  "KAUST": {
+    "stage_4": {
+      "silhouette": 0.0208,
+      "davies_bouldin": 9.3021,
+      "calinski_harabasz": 22.71,
+      "n_points": 2000,
+      "n_classes": 2
+    },
+    "stage_3": {
+      "silhouette": 0.0176,
+      "davies_bouldin": 10.1576,
+      "calinski_harabasz": 18.32,
+      "n_points": 2000,
+      "n_classes": 2
+    },
+    "stage_2": {
+      "silhouette": 0.0166,
+      "davies_bouldin": 9.7363,
+      "calinski_harabasz": 20.5,
+      "n_points": 2000,
+      "n_classes": 2
+    },
+    "stage_1": {
+      "silhouette": 0.0092,
+      "davies_bouldin": 14.5616,
+      "calinski_harabasz": 8.44,
+      "n_points": 2000,
+      "n_classes": 2
+    }
+  },
+  "STMD": {
+    "stage_4": {
+      "silhouette": 0.0134,
+      "davies_bouldin": 5.6407,
+      "calinski_harabasz": 41.49,
+      "n_points": 2000,
+      "n_classes": 5
+    },
+    "stage_3": {
+      "silhouette": -0.0043,
+      "davies_bouldin": 7.1398,
+      "calinski_harabasz": 21.54,
+      "n_points": 2000,
+      "n_classes": 5
+    },
+    "stage_2": {
+      "silhouette": -0.0133,
+      "davies_bouldin": 16.1469,
+      "calinski_harabasz": 4.18,
+      "n_points": 2000,
+      "n_classes": 5
+    },
+    "stage_1": {
+      "silhouette": -0.0581,
+      "davies_bouldin": 20.7235,
+      "calinski_harabasz": 3.29,
+      "n_points": 2000,
+      "n_classes": 5
+    }
+  }
+}

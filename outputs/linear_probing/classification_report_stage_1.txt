@@ -1,0 +1,16 @@
+Linear Probing — stage_1 (256×256)
+Checkpoint : sam2.1_hiera_small_1.pt
+Dataset    : STMD
+Accuracy   : 28.44%  |  Baseline : 20.00%
+────────────────────────────────────────────────────────────
+              precision    recall  f1-score   support
+
+           0       0.32      0.69      0.43     67153
+           1       0.18      0.14      0.16     44932
+           2       0.31      0.07      0.11     41853
+           3       0.27      0.15      0.20     42792
+           4       0.26      0.20      0.22     65414
+
+    accuracy                           0.28    262144
+   macro avg       0.27      0.25      0.22    262144
+weighted avg       0.27      0.28      0.24    262144

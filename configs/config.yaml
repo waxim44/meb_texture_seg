@@ -1,0 +1,17 @@
+defaults:
+  - encoder: texturesam
+  - clustering: cah
+  - evaluation: metrics
+  - _self_
+
+experiment_name: "phase0_texturesam"
+seed: 42
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  image_ext: "tif"
+
+paths:
+  checkpoints: "checkpoints"
+  outputs: "outputs"

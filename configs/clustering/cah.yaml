@@ -1,0 +1,14 @@
+n_clusters: 4
+metric: "cosine"
+linkage: "ward"
+
+minibatch:
+  use: true
+  size: 256
+  n_init: 10
+
+medoid:
+  alpha: 0.4
+  beta: 0.3
+  gamma: 0.3
+  n_neighbors: 8

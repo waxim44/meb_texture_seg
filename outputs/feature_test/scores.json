@@ -1,0 +1,46 @@
+{
+  "KAUST": {
+    "stage_4": {
+      "score": 1.0125,
+      "d_intra": 0.6869,
+      "d_inter": 0.6955
+    },
+    "stage_3": {
+      "score": 1.0126,
+      "d_intra": 0.7253,
+      "d_inter": 0.7344
+    },
+    "stage_2": {
+      "score": 1.0088,
+      "d_intra": 0.8722,
+      "d_inter": 0.8798
+    },
+    "stage_1": {
+      "score": 1.0077,
+      "d_intra": 0.897,
+      "d_inter": 0.904
+    }
+  },
+  "STMD": {
+    "stage_4": {
+      "score": 1.0436,
+      "d_intra": 0.3467,
+      "d_inter": 0.3618
+    },
+    "stage_3": {
+      "score": 1.0341,
+      "d_intra": 0.3875,
+      "d_inter": 0.4007
+    },
+    "stage_2": {
+      "score": 1.0228,
+      "d_intra": 0.6055,
+      "d_inter": 0.6193
+    },
+    "stage_1": {
+      "score": 1.0026,
+      "d_intra": 0.7187,
+      "d_inter": 0.7206
+    }
+  }
+}
