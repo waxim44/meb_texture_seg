@@ -1,6 +1,8 @@
 # Données et checkpoints lourds
 data/
 checkpoints/
+Image_Ouassim/
+PatchTagger_Output/
 *.pth
 *.pt
 *.ckpt
