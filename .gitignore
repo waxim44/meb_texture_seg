@@ -3,6 +3,8 @@ data/
 checkpoints/
 Image_Ouassim/
 PatchTagger_Output/
+Image_Ouassim.zip
+PatchTagger_Output.zip
 *.pth
 *.pt
 *.ckpt
