@@ -1,0 +1,53 @@
+====================================================================================================
+SWEEP COMPLET — blocks Ouassim (images MEB grayscale brutes)
+Base : database_meb_ouassim.h5  |  Patches valides : 816
+Catégories : ['Totalement homogène', 'Faisceaux', 'Filaments', 'Stratifié rectiligne', 'Stratifié sinueux', 'Granuleux', 'Trou']
+Protocole : PCA-50d, 5-fold par image, SEED=42
+Baseline : 14.3%  (1/7 aléatoire)
+====================================================================================================
+
+Rang  Block            Dim │         LP (%) │   Fisher J │   τ_cross │   τ_intra │   ratio
+────────────────────────────────────────────────────────────────────────────────────────────────────
+1     block_4          384 │   55.5 ±  6.6   │      0.201 │     0.091 │     0.293 │   0.310
+2     block_10         384 │   55.5 ±  8.5   │      0.284 │     0.130 │     0.430 │   0.303
+3     block_8          384 │   55.1 ±  7.7   │      0.280 │     0.126 │     0.396 │   0.319
+4     block_6          384 │   54.8 ±  2.4   │      0.241 │     0.109 │     0.338 │   0.322
+5     block_9          384 │   53.4 ±  8.0   │      0.265 │     0.129 │     0.385 │   0.337
+6     block_5          384 │   53.1 ±  3.7   │      0.214 │     0.097 │     0.302 │   0.321
+7     block_7          384 │   52.2 ±  6.6   │      0.281 │     0.120 │     0.394 │   0.306
+8     block_11         384 │   52.1 ±  8.5   │      0.264 │     0.122 │     0.415 │   0.293
+9     block_12         384 │   51.7 ±  8.1   │      0.252 │     0.117 │     0.408 │   0.286
+10    stage_3_fpn      256 │   51.5 ± 10.1   │      0.333 │     0.129 │     0.479 │   0.269
+11    block_2          192 │   48.3 ± 11.3   │      0.342 │     0.136 │     0.408 │   0.333
+12    block_3          384 │   47.6 ±  8.3   │      0.138 │     0.065 │     0.229 │   0.283
+13    block_13         384 │   46.8 ±  7.0   │      0.285 │     0.113 │     0.459 │   0.246
+14    stage_2_fpn      256 │   46.3 ± 11.5   │      0.546 │     0.204 │     0.581 │   0.351
+15    block_14         768 │   42.7 ± 12.6   │      0.237 │     0.075 │     0.491 │   0.154
+16    stage_4_fpn      256 │   41.9 ± 14.3   │      0.234 │     0.081 │     0.483 │   0.167
+17    block_15         768 │   41.1 ± 12.5   │      0.234 │     0.076 │     0.498 │   0.152
+18    block_1          192 │   41.1 ± 11.6   │      0.274 │     0.119 │     0.355 │   0.336
+19    stage_1_fpn      256 │   37.4 ±  9.8   │      0.508 │     0.146 │     0.525 │   0.277
+20    block_0           96 │   36.5 ± 10.8   │      0.492 │     0.134 │     0.468 │   0.285
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+VERDICT
+────────────────────────────────────────────────────────────
+Top 3 par Linear Probing :
+  1. block_4        LP=55.5%  τ_cross=0.091  Fisher=0.201
+  2. block_10       LP=55.5%  τ_cross=0.130  Fisher=0.284
+  3. block_8        LP=55.1%  τ_cross=0.126  Fisher=0.280
+
+Meilleur LP        : block_4  → 55.5%
+Meilleur τ_cross   : stage_2_fpn  → 0.204  (LA PLUS IMPORTANTE : généralise aux nouvelles images)
+Meilleur Fisher J  : stage_2_fpn  → 0.546
+
+Sweet spot (LP>2×baseline ET τ_cross max) : block_2
+  LP=48.3%  τ_cross=0.136  Fisher=0.342
+
+COMPARAISON AVEC PATCHAGGER :
+  PatchTagger → block_0 semblait le meilleur (LP=97%, τ=0.984)
+  Ouassim     → block_0 s'effondre (LP=36.5%, τ=0.134)
+  La séparabilité de block_0 sur PatchTagger était liée au traitement image (RGB, contraste),
+  pas à la texture biologique réelle.
+  Sur les vraies images MEB, recommander : block_2
+====================================================================================================

@@ -1,0 +1,59 @@
+================================================================================
+ANALYSE DE STRUCTURE — block_4  (Ouassim vs PatchTagger)
+================================================================================
+Base Ouassim     : 816 patches valides, 7 catégories
+Baseline         : 14.3%
+Balanced Acc Ouassim     : 55.5%
+Balanced Acc PatchTagger : 96.3%
+Chute globale            : -40.8 pts
+
+────────────────────────────────────────────────────────────────────────────────
+RECALL PAR CATÉGORIE
+────────────────────────────────────────────────────────────────────────────────
+Catégorie               PatchTagger    Ouassim        Δ  Statut
+────────────────────────────────────────────────────────────
+Totalement homogène         100.0%      92.7%    -7.3  TIENT ✓
+Granuleux                   100.0%      72.1%   -27.9  TIENT ✓
+Trou                        100.0%      55.4%   -44.6  TIENT ✓
+Stratifié sinueux           100.0%      54.3%   -45.7  TIENT ✓
+Faisceaux                    73.5%      48.5%   -25.0  >baseline
+Filaments                    85.7%      42.9%   -42.9  >baseline
+Stratifié rectiligne        100.0%      23.4%   -76.6  >baseline
+
+────────────────────────────────────────────────────────────────────────────────
+TEXTURES QUI TIENNENT (recall ≥ 50% sur Ouassim)
+────────────────────────────────────────────────────────────────────────────────
+  Totalement homogène    recall=92.7%  (Δ=-7.3 vs PatchTagger)
+  Granuleux              recall=72.1%  (Δ=-27.9 vs PatchTagger)
+  Trou                   recall=55.4%  (Δ=-44.6 vs PatchTagger)
+  Stratifié sinueux      recall=54.3%  (Δ=-45.7 vs PatchTagger)
+
+────────────────────────────────────────────────────────────────────────────────
+TEXTURES QUI S'EFFONDRENT (recall < baseline × 1.5)
+────────────────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────────────────
+PAIRES LES PLUS CONFUSES (Ouassim)
+────────────────────────────────────────────────────────────────────────────────
+  1. Stratifié rectiligne   ↔ Stratifié sinueux      : 53 erreurs cumulées
+  2. Faisceaux              ↔ Granuleux              : 42 erreurs cumulées
+  3. Stratifié sinueux      ↔ Granuleux              : 41 erreurs cumulées
+  4. Stratifié sinueux      ↔ Trou                   : 33 erreurs cumulées
+  5. Filaments              ↔ Granuleux              : 26 erreurs cumulées
+
+────────────────────────────────────────────────────────────────────────────────
+INTERPRÉTATION
+────────────────────────────────────────────────────────────────────────────────
+La chute de -40.8 pts de balanced accuracy (PatchTagger → Ouassim)
+suggère que block_4 encode partiellement des propriétés d'image (contraste,
+luminosité, traitement RGB) en plus de la texture pure.
+
+Les textures qui TIENNENT sur Ouassim ont des signatures texturales
+suffisamment distinctes pour survivre au changement de rendu.
+
+Les textures qui CHUTENT sont ambiguës en grayscale : leurs différences
+étaient visibles grâce au traitement PatchTagger (ex. accentuation de contraste).
+
+→ Recommandation : normalisation de contraste CLAHE sur images Ouassim,
+  ou fine-tuning du modèle sur ce domaine.
+================================================================================

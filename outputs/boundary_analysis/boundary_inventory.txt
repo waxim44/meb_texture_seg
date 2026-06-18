@@ -1,0 +1,200 @@
+========================================================================
+INVENTAIRE DES FRONTIÈRES TEXTURALES — database_meb.h5
+ADJ_TOL=10px  ·  MIN_PER_PAIR=3
+========================================================================
+
+── STATISTIQUES GÉNÉRALES ──
+  Images avec patches valides        : 42
+  Images avec ≥ 2 catégories valides : 26
+  Total frontières inter-catégories  : 121
+  Patches impliqués dans une frontière: 165
+  Paires distinctes de catégories    : 14
+
+── MATRICE DE FRONTIÈRES (paire A ↔ B) ──
+
+              Totalement   Faisceaux   Filaments  Stratifié   Stratifié    Granuleux        Trou
+  Totalement         ---           3           0           0           0           0           0
+   Faisceaux           3         ---           4           1           8          34           4
+   Filaments           0           4         ---           3           4           4           0
+  Stratifié            0           1           3         ---          20           0           2
+  Stratifié            0           8           4          20         ---           6           1
+   Granuleux           0          34           4           0           6         ---          27
+        Trou           0           4           0           2           1          27         ---
+
+── FRONTIÈRES PAR IMAGE ──
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-22.t  n_bnd= 38  cats=[3+7+9]
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif            n_bnd= 10  cats=[3+5+6]
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-37.t  n_bnd= 10  cats=[7+9]
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif            n_bnd=  9  cats=[3+4+5+6]
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif            n_bnd=  9  cats=[3+4+5+6+7]
+  070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif            n_bnd=  6  cats=[5+6]
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.tif           n_bnd=  5  cats=[7+9]
+  070722-Nabila-JP-Valves-WholeMount-SAureus-pat10-00.tif  n_bnd=  5  cats=[4+7+9]
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0005.tif            n_bnd=  4  cats=[5+6+9]
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0037.tif            n_bnd=  3  cats=[5+6+7]
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-2-15.t  n_bnd=  3  cats=[7+9]
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0027.tif            n_bnd=  3  cats=[6+7]
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0073.tif            n_bnd=  3  cats=[1+3+4+9]
+  310120-pat18-WholeMount-24.tif                           n_bnd=  3  cats=[3+7+9]
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0042.tif            n_bnd=  2  cats=[6+7]
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pat02-28.tif  n_bnd=  2  cats=[7+9]
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0103.tif            n_bnd=  2  cats=[3+4+5+7]
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0036.tif            n_bnd=  1  cats=[6+9]
+  060525-JPB-MEB-EIHNValves-Ech3-ZigZag0061.tif            n_bnd=  1  cats=[3+4+7]
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif            n_bnd=  1  cats=[5+6]
+  A-ZIgZag-pat04-X4000-10014.tif                           n_bnd=  1  cats=[3+7+9]
+
+── LISTE DÉTAILLÉE DES FRONTIÈRES ──
+  image                                          catA                    catB                    type                  posA                  posB
+  ------------------------------------------------------------------------------------------------------------------------------------------
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.ti  Granuleux               Trou                       V  (np.int64(256), np.int64(384), np.int64(384), np.int64(512))  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.ti  Trou                    Granuleux                  H  (np.int64(128), np.int64(384), np.int64(256), np.int64(512))  (np.int64(256), np.int64(384), np.int64(384), np.int64(512))
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.ti  Trou                    Granuleux                  H  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.ti  Trou                    Granuleux                  V  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))  (np.int64(256), np.int64(640), np.int64(384), np.int64(768))
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.ti  Trou                    Granuleux                  H  (np.int64(128), np.int64(640), np.int64(256), np.int64(768))  (np.int64(256), np.int64(640), np.int64(384), np.int64(768))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié rectiligne    Stratifié sinueux          H  (np.int64(896), np.int64(128), np.int64(1024), np.int64(256))  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié rectiligne    Stratifié sinueux          V  (np.int64(896), np.int64(128), np.int64(1024), np.int64(256))  (np.int64(896), np.int64(256), np.int64(1024), np.int64(384))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié rectiligne    Stratifié sinueux          H  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))  (np.int64(1024), np.int64(384), np.int64(1152), np.int64(512))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié rectiligne    Stratifié sinueux          V  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))  (np.int64(896), np.int64(512), np.int64(1024), np.int64(640))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié sinueux       Faisceaux                  V  (np.int64(1152), np.int64(0), np.int64(1280), np.int64(128))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié sinueux       Faisceaux                  H  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié sinueux       Stratifié rectiligne       V  (np.int64(896), np.int64(0), np.int64(1024), np.int64(128))  (np.int64(896), np.int64(128), np.int64(1024), np.int64(256))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié sinueux       Stratifié rectiligne       H  (np.int64(768), np.int64(128), np.int64(896), np.int64(256))  (np.int64(896), np.int64(128), np.int64(1024), np.int64(256))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié sinueux       Stratifié rectiligne       V  (np.int64(896), np.int64(256), np.int64(1024), np.int64(384))  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif  Stratifié sinueux       Stratifié rectiligne       H  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0036.tif  Trou                    Stratifié sinueux          H  (np.int64(256), np.int64(0), np.int64(384), np.int64(128))  (np.int64(384), np.int64(0), np.int64(512), np.int64(128))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0037.tif  Stratifié rectiligne    Stratifié sinueux          V  (np.int64(0), np.int64(256), np.int64(128), np.int64(384))  (np.int64(0), np.int64(384), np.int64(128), np.int64(512))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0037.tif  Stratifié sinueux       Stratifié rectiligne       V  (np.int64(128), np.int64(128), np.int64(256), np.int64(256))  (np.int64(128), np.int64(256), np.int64(256), np.int64(384))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0037.tif  Granuleux               Stratifié sinueux          V  (np.int64(1152), np.int64(0), np.int64(1280), np.int64(128))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0042.tif  Stratifié sinueux       Granuleux                  V  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))  (np.int64(768), np.int64(512), np.int64(896), np.int64(640))
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0042.tif  Granuleux               Stratifié sinueux          V  (np.int64(768), np.int64(256), np.int64(896), np.int64(384))  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))
+  060525-JPB-MEB-EIHNValves-Ech3-ZigZag0061.tif  Filaments               Granuleux                  V  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1024), np.int64(256), np.int64(1152), np.int64(384))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       H  (np.int64(1024), np.int64(0), np.int64(1152), np.int64(128))  (np.int64(1152), np.int64(0), np.int64(1280), np.int64(128))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  V  (np.int64(1152), np.int64(0), np.int64(1280), np.int64(128))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  V  (np.int64(384), np.int64(0), np.int64(512), np.int64(128))  (np.int64(384), np.int64(128), np.int64(512), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  V  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1024), np.int64(256), np.int64(1152), np.int64(384))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  H  (np.int64(384), np.int64(256), np.int64(512), np.int64(384))  (np.int64(512), np.int64(256), np.int64(640), np.int64(384))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  V  (np.int64(384), np.int64(256), np.int64(512), np.int64(384))  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  H  (np.int64(256), np.int64(384), np.int64(384), np.int64(512))  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  H  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  H  (np.int64(1024), np.int64(384), np.int64(1152), np.int64(512))  (np.int64(1152), np.int64(384), np.int64(1280), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  V  (np.int64(1024), np.int64(384), np.int64(1152), np.int64(512))  (np.int64(1024), np.int64(512), np.int64(1152), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  V  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))  (np.int64(256), np.int64(640), np.int64(384), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  V  (np.int64(640), np.int64(512), np.int64(768), np.int64(640))  (np.int64(640), np.int64(640), np.int64(768), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  H  (np.int64(896), np.int64(512), np.int64(1024), np.int64(640))  (np.int64(1024), np.int64(512), np.int64(1152), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Granuleux                  H  (np.int64(384), np.int64(640), np.int64(512), np.int64(768))  (np.int64(512), np.int64(640), np.int64(640), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Trou                       V  (np.int64(1152), np.int64(0), np.int64(1280), np.int64(128))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Trou                       H  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Trou                       V  (np.int64(1152), np.int64(512), np.int64(1280), np.int64(640))  (np.int64(1152), np.int64(640), np.int64(1280), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Faisceaux               Trou                       H  (np.int64(1024), np.int64(640), np.int64(1152), np.int64(768))  (np.int64(1152), np.int64(640), np.int64(1280), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(256), np.int64(0), np.int64(384), np.int64(128))  (np.int64(384), np.int64(0), np.int64(512), np.int64(128))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(1024), np.int64(0), np.int64(1152), np.int64(128))  (np.int64(1152), np.int64(0), np.int64(1280), np.int64(128))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(1024), np.int64(0), np.int64(1152), np.int64(128))  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(384), np.int64(128), np.int64(512), np.int64(256))  (np.int64(384), np.int64(256), np.int64(512), np.int64(384))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(384), np.int64(128), np.int64(512), np.int64(256))  (np.int64(512), np.int64(128), np.int64(640), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(512), np.int64(256), np.int64(640), np.int64(384))  (np.int64(512), np.int64(128), np.int64(640), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(640), np.int64(256), np.int64(768), np.int64(384))  (np.int64(640), np.int64(384), np.int64(768), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(768), np.int64(256), np.int64(896), np.int64(384))  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(1024), np.int64(256), np.int64(1152), np.int64(384))  (np.int64(1024), np.int64(384), np.int64(1152), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(512), np.int64(384), np.int64(640), np.int64(512))  (np.int64(640), np.int64(384), np.int64(768), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))  (np.int64(1024), np.int64(384), np.int64(1152), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))  (np.int64(896), np.int64(512), np.int64(1024), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(1152), np.int64(384), np.int64(1280), np.int64(512))  (np.int64(1152), np.int64(512), np.int64(1280), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(128), np.int64(512), np.int64(256), np.int64(640))  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(1024), np.int64(512), np.int64(1152), np.int64(640))  (np.int64(1152), np.int64(512), np.int64(1280), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  V  (np.int64(1024), np.int64(512), np.int64(1152), np.int64(640))  (np.int64(1024), np.int64(640), np.int64(1152), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(256), np.int64(640), np.int64(384), np.int64(768))  (np.int64(384), np.int64(640), np.int64(512), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Faisceaux                  H  (np.int64(640), np.int64(640), np.int64(768), np.int64(768))  (np.int64(768), np.int64(640), np.int64(896), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       V  (np.int64(0), np.int64(512), np.int64(128), np.int64(640))  (np.int64(0), np.int64(640), np.int64(128), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  V  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))  (np.int64(1152), np.int64(256), np.int64(1280), np.int64(384))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  H  (np.int64(0), np.int64(640), np.int64(128), np.int64(768))  (np.int64(128), np.int64(640), np.int64(256), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       H  (np.int64(128), np.int64(384), np.int64(256), np.int64(512))  (np.int64(256), np.int64(384), np.int64(384), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       H  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       V  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))  (np.int64(768), np.int64(512), np.int64(896), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       V  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))  (np.int64(384), np.int64(640), np.int64(512), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       H  (np.int64(256), np.int64(640), np.int64(384), np.int64(768))  (np.int64(384), np.int64(640), np.int64(512), np.int64(768))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  H  (np.int64(512), np.int64(128), np.int64(640), np.int64(256))  (np.int64(640), np.int64(128), np.int64(768), np.int64(256))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  V  (np.int64(512), np.int64(256), np.int64(640), np.int64(384))  (np.int64(512), np.int64(384), np.int64(640), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  V  (np.int64(256), np.int64(384), np.int64(384), np.int64(512))  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  H  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))  (np.int64(512), np.int64(384), np.int64(640), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  V  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       H  (np.int64(128), np.int64(256), np.int64(256), np.int64(384))  (np.int64(256), np.int64(256), np.int64(384), np.int64(384))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  H  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))  (np.int64(512), np.int64(384), np.int64(640), np.int64(512))
+  060722-Nabila-JP-Valves-WholeMount-SAureus-pa  Trou                    Granuleux                  V  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif  Stratifié rectiligne    Stratifié sinueux          H  (np.int64(768), np.int64(0), np.int64(896), np.int64(128))  (np.int64(896), np.int64(0), np.int64(1024), np.int64(128))
+  070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif  Stratifié rectiligne    Stratifié sinueux          V  (np.int64(512), np.int64(128), np.int64(640), np.int64(256))  (np.int64(512), np.int64(256), np.int64(640), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif  Stratifié rectiligne    Stratifié sinueux          H  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif  Stratifié rectiligne    Stratifié sinueux          V  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1024), np.int64(256), np.int64(1152), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif  Stratifié sinueux       Stratifié rectiligne       V  (np.int64(1024), np.int64(0), np.int64(1152), np.int64(128))  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))
+  070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif  Stratifié sinueux       Stratifié rectiligne       H  (np.int64(512), np.int64(384), np.int64(640), np.int64(512))  (np.int64(640), np.int64(384), np.int64(768), np.int64(512))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0005.tif  Stratifié rectiligne    Stratifié sinueux          H  (np.int64(128), np.int64(512), np.int64(256), np.int64(640))  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0005.tif  Stratifié rectiligne    Trou                       V  (np.int64(896), np.int64(256), np.int64(1024), np.int64(384))  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0005.tif  Stratifié sinueux       Stratifié rectiligne       H  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0005.tif  Trou                    Stratifié rectiligne       V  (np.int64(896), np.int64(384), np.int64(1024), np.int64(512))  (np.int64(896), np.int64(512), np.int64(1024), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0027.tif  Stratifié sinueux       Granuleux                  V  (np.int64(768), np.int64(640), np.int64(896), np.int64(768))  (np.int64(768), np.int64(512), np.int64(896), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0027.tif  Granuleux               Stratifié sinueux          V  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))  (np.int64(256), np.int64(640), np.int64(384), np.int64(768))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0027.tif  Granuleux               Stratifié sinueux          V  (np.int64(896), np.int64(512), np.int64(1024), np.int64(640))  (np.int64(896), np.int64(640), np.int64(1024), np.int64(768))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Faisceaux               Stratifié rectiligne       H  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Faisceaux               Stratifié sinueux          V  (np.int64(0), np.int64(0), np.int64(128), np.int64(128))  (np.int64(0), np.int64(128), np.int64(128), np.int64(256))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Faisceaux               Stratifié sinueux          V  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))  (np.int64(1024), np.int64(256), np.int64(1152), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Filaments               Faisceaux                  H  (np.int64(384), np.int64(256), np.int64(512), np.int64(384))  (np.int64(512), np.int64(256), np.int64(640), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Stratifié rectiligne    Stratifié sinueux          V  (np.int64(1152), np.int64(128), np.int64(1280), np.int64(256))  (np.int64(1152), np.int64(256), np.int64(1280), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Stratifié sinueux       Faisceaux                  H  (np.int64(896), np.int64(0), np.int64(1024), np.int64(128))  (np.int64(768), np.int64(0), np.int64(896), np.int64(128))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Stratifié sinueux       Faisceaux                  H  (np.int64(896), np.int64(0), np.int64(1024), np.int64(128))  (np.int64(1024), np.int64(0), np.int64(1152), np.int64(128))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Stratifié sinueux       Faisceaux                  V  (np.int64(768), np.int64(128), np.int64(896), np.int64(256))  (np.int64(768), np.int64(0), np.int64(896), np.int64(128))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif  Stratifié sinueux       Filaments                  H  (np.int64(0), np.int64(128), np.int64(128), np.int64(256))  (np.int64(128), np.int64(128), np.int64(256), np.int64(256))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0073.tif  Faisceaux               Totalement homogène        V  (np.int64(640), np.int64(512), np.int64(768), np.int64(640))  (np.int64(640), np.int64(640), np.int64(768), np.int64(768))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0073.tif  Faisceaux               Totalement homogène        V  (np.int64(768), np.int64(512), np.int64(896), np.int64(640))  (np.int64(768), np.int64(640), np.int64(896), np.int64(768))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0073.tif  Faisceaux               Totalement homogène        H  (np.int64(512), np.int64(640), np.int64(640), np.int64(768))  (np.int64(640), np.int64(640), np.int64(768), np.int64(768))
+  070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif  Stratifié sinueux       Stratifié rectiligne       V  (np.int64(0), np.int64(512), np.int64(128), np.int64(640))  (np.int64(0), np.int64(640), np.int64(128), np.int64(768))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Filaments               Faisceaux                  V  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Filaments               Faisceaux                  H  (np.int64(0), np.int64(512), np.int64(128), np.int64(640))  (np.int64(128), np.int64(512), np.int64(256), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Filaments               Faisceaux                  V  (np.int64(0), np.int64(512), np.int64(128), np.int64(640))  (np.int64(0), np.int64(640), np.int64(128), np.int64(768))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Filaments               Stratifié sinueux          H  (np.int64(128), np.int64(256), np.int64(256), np.int64(384))  (np.int64(256), np.int64(256), np.int64(384), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Stratifié rectiligne    Filaments                  H  (np.int64(0), np.int64(256), np.int64(128), np.int64(384))  (np.int64(128), np.int64(256), np.int64(256), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Stratifié rectiligne    Filaments                  V  (np.int64(0), np.int64(256), np.int64(128), np.int64(384))  (np.int64(0), np.int64(384), np.int64(128), np.int64(512))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Stratifié sinueux       Faisceaux                  V  (np.int64(256), np.int64(384), np.int64(384), np.int64(512))  (np.int64(256), np.int64(512), np.int64(384), np.int64(640))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Stratifié sinueux       Filaments                  H  (np.int64(256), np.int64(256), np.int64(384), np.int64(384))  (np.int64(384), np.int64(256), np.int64(512), np.int64(384))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif  Stratifié sinueux       Filaments                  H  (np.int64(256), np.int64(384), np.int64(384), np.int64(512))  (np.int64(384), np.int64(384), np.int64(512), np.int64(512))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0103.tif  Faisceaux               Granuleux                  H  (np.int64(128), np.int64(0), np.int64(256), np.int64(128))  (np.int64(256), np.int64(0), np.int64(384), np.int64(128))
+  070525-JPB-MEB-EIHNValves-Ech6-ZigZag0103.tif  Stratifié rectiligne    Filaments                  V  (np.int64(384), np.int64(512), np.int64(512), np.int64(640))  (np.int64(384), np.int64(640), np.int64(512), np.int64(768))
+  070722-Nabila-JP-Valves-WholeMount-SAureus-pa  Filaments               Granuleux                  H  (np.int64(768), np.int64(256), np.int64(896), np.int64(384))  (np.int64(896), np.int64(256), np.int64(1024), np.int64(384))
+  070722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Filaments                  H  (np.int64(640), np.int64(128), np.int64(768), np.int64(256))  (np.int64(768), np.int64(128), np.int64(896), np.int64(256))
+  070722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Filaments                  H  (np.int64(640), np.int64(256), np.int64(768), np.int64(384))  (np.int64(768), np.int64(256), np.int64(896), np.int64(384))
+  070722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       V  (np.int64(512), np.int64(384), np.int64(640), np.int64(512))  (np.int64(512), np.int64(512), np.int64(640), np.int64(640))
+  070722-Nabila-JP-Valves-WholeMount-SAureus-pa  Granuleux               Trou                       H  (np.int64(384), np.int64(640), np.int64(512), np.int64(768))  (np.int64(512), np.int64(640), np.int64(640), np.int64(768))
+  310120-pat18-WholeMount-24.tif                 Faisceaux               Granuleux                  V  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))  (np.int64(768), np.int64(512), np.int64(896), np.int64(640))
+  310120-pat18-WholeMount-24.tif                 Granuleux               Faisceaux                  H  (np.int64(640), np.int64(384), np.int64(768), np.int64(512))  (np.int64(768), np.int64(384), np.int64(896), np.int64(512))
+  310120-pat18-WholeMount-24.tif                 Granuleux               Trou                       H  (np.int64(896), np.int64(640), np.int64(1024), np.int64(768))  (np.int64(1024), np.int64(640), np.int64(1152), np.int64(768))
+  A-ZIgZag-pat04-X4000-10014.tif                 Trou                    Granuleux                  V  (np.int64(1024), np.int64(0), np.int64(1152), np.int64(128))  (np.int64(1024), np.int64(128), np.int64(1152), np.int64(256))
+
+── RECOMMANDATION ──
+
+Paires EXPLOITABLES (≥ 3 frontières) :
+
+  Faisceaux                 ↔ Granuleux                  n= 34  (H=17, V=17)
+  Granuleux                 ↔ Trou                       n= 27  (H=14, V=13)
+  Stratifié rectiligne      ↔ Stratifié sinueux          n= 20  (H=9, V=11)
+  Faisceaux                 ↔ Stratifié sinueux          n=  8  (H=3, V=5)
+  Stratifié sinueux         ↔ Granuleux                  n=  6  (H=0, V=6)
+  Filaments                 ↔ Granuleux                  n=  4  (H=3, V=1)
+  Faisceaux                 ↔ Trou                       n=  4  (H=2, V=2)
+  Filaments                 ↔ Stratifié sinueux          n=  4  (H=4, V=0)
+  Faisceaux                 ↔ Filaments                  n=  4  (H=2, V=2)
+  Totalement homogène       ↔ Faisceaux                  n=  3  (H=1, V=2)
+  Filaments                 ↔ Stratifié rectiligne       n=  3  (H=1, V=2)
+
+Paires INSUFFISANTES (< 3 frontières) :
+  Stratifié rectiligne      ↔ Trou                       n=2
+  Stratifié sinueux         ↔ Trou                       n=1
+  Faisceaux                 ↔ Stratifié rectiligne       n=1
+
+CONCLUSION :
+  → 11 paires exploitables pour le test de frontière.
+  → 121 paires de patches adjacents inter-catégories en tout.
+  → 165 patches individuels impliqués dans ≥ 1 frontière.
+  → Suggestion : pour chaque paire exploitable, utiliser TOUTES les frontières
+    disponibles (pas de sous-échantillonnage vu la rareté).
+  → À ÉVITER : créer des frontières artificielles par collage — les vraies
+    frontières capturent la transition biologique réelle.

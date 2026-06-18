@@ -1,0 +1,27 @@
+Traversée des frontières texturales — Résultats
+N_BOUNDARIES=5  N_STEPS=11  PCA_DIM=10  REG_COVAR=0.1  PERCENTILE=5
+
+Frontière 1 : Trou ↔ Granuleux
+  dist_seg   max=0.398  mean=0.195   → interpolation directe
+  GMM inconnus : 6/11 positions   croisement sim_A/sim_B : t=0.60
+  → transition NETTE au centre
+Frontière 2 : Granuleux ↔ Strat.sin.
+  dist_seg   max=0.624  mean=0.280   → DÉTOUR (zone intermédiaire ?)
+  GMM inconnus : 6/11 positions   croisement sim_A/sim_B : t=0.30
+  → transition NETTE au centre
+Frontière 3 : Trou ↔ Strat.sin.
+  dist_seg   max=0.104  mean=0.070   → interpolation directe
+  GMM inconnus : 4/11 positions   croisement sim_A/sim_B : t=0.40
+  → transition NETTE au centre
+Frontière 4 : Faisceaux ↔ Trou
+  dist_seg   max=0.675  mean=0.251   → DÉTOUR (zone intermédiaire ?)
+  GMM inconnus : 9/11 positions   croisement sim_A/sim_B : t=0.60
+  → transition NETTE au centre
+Frontière 5 : Strat.rect. ↔ Trou
+  dist_seg   max=0.114  mean=0.064   → interpolation directe
+  GMM inconnus : 6/11 positions   croisement sim_A/sim_B : t=0.80
+  → transition décalée ou absente
+--- Résumé global (5 frontières) ---
+Trajectoires directes (max dist_seg < 0.5)  : 3/5
+Frontières avec croisement sim_A/sim_B      : 5/5
+Interprétation : block_0 montre des détours à certaines frontières — possible "3e texture" intermédiaire

@@ -27,7 +27,7 @@ from sklearn.preprocessing import normalize
 ROOT    = Path(__file__).resolve().parents[1]
 SAM2_DIR = ROOT / "TextureSAM" / "sam2"
 if str(SAM2_DIR) not in sys.path:
-    sys.path.insert(0, str(SAM2_DIR))
+    sys.path.insert(0, str(SAM2_DIR / 'sam2'))
 
 CKPT_PT  = ROOT / "checkpoints" / "sam2.1_hiera_small_1.pt"
 CKPT_DIR = ROOT / "checkpoints" / "sam2.1_hiera_small_1"

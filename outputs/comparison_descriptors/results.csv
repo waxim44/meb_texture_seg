@@ -1,0 +1,5 @@
+methode,dim,lp_mean,lp_std,fisher
+block_0 (TextureSAM),96,96.90,3.81,41.2989
+LBP,10,43.15,8.58,1.0666
+GLCM,40,37.55,12.34,0.7303
+Gabor,32,40.44,11.03,0.4620

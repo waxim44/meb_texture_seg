@@ -1,0 +1,37 @@
+==========================================================================================
+ROBUSTESSE À LA SOURCE D'IMAGES — block_0 vs autres blocs
+PatchTagger (RGB traitées)  vs  Ouassim (grayscale brutes)
+Protocole : PCA-50d, L2-norm, 5-fold stratifié par image, class_weight balanced
+Catégories : ['Totalement homogène', 'Faisceaux', 'Filaments', 'Stratifié rectiligne', 'Stratifié sinueux', 'Granuleux', 'Trou']  |  Patches : 816
+Baseline aléatoire : 14.3%
+==========================================================================================
+
+Bloc           Source           Dim │       LP (%) │   Fisher J │  τ cross/intra
+──────────────────────────────────────────────────────────────────────────────────────────
+block_0        PatchTagger       96 │   96.9 ±  3.8   │      41.30 │          0.984
+block_0        Ouassim           96 │   36.5 ± 10.8   │       0.49 │          0.285
+──────────────────────────────────────────────────────────────────────────────────────────
+block_3        PatchTagger      384 │   97.6 ±  2.4   │       1.15 │          0.844
+block_3        Ouassim          384 │   47.6 ±  8.3   │       0.14 │          0.283
+──────────────────────────────────────────────────────────────────────────────────────────
+stage_3_fpn    PatchTagger      256 │   73.7 ±  9.0   │       0.56 │          0.413
+stage_3_fpn    Ouassim          256 │   51.5 ± 10.1   │       0.33 │          0.269
+──────────────────────────────────────────────────────────────────────────────────────────
+block_13       PatchTagger      384 │   81.1 ±  8.8   │       0.35 │          0.307
+block_13       Ouassim          384 │   46.8 ±  7.0   │       0.28 │          0.246
+──────────────────────────────────────────────────────────────────────────────────────────
+
+VERDICT PAR BLOC
+────────────────────────────────────────────────────────────
+block_0         ΔLP=-60.4%  ΔLARGE  
+block_3         ΔLP=-50.1%  ΔLARGE  ★ meilleur PatchTagger
+stage_3_fpn     ΔLP=-22.2%  ΔLARGE  ★ meilleur Ouassim
+block_13        ΔLP=-34.2%  ΔLARGE  
+
+────────────────────────────────────────────────────────────
+Meilleur bloc PatchTagger : block_3  (LP=97.6%)
+Meilleur bloc Ouassim     : stage_3_fpn  (LP=51.5%)
+
+ROBUSTESSE : ✗ NON — le meilleur bloc change selon la source
+→ Analyser les différences entre sources.
+==========================================================================================
