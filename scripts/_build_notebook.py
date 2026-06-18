@@ -61,7 +61,7 @@ cells.append(code(
     "ROOT     = Path('..').resolve()",
     "SAM2_DIR = ROOT / 'TextureSAM' / 'sam2'",
     "if str(SAM2_DIR) not in sys.path:",
-    "    sys.path.insert(0, str(SAM2_DIR))",
+    "    sys.path.insert(0, str(SAM2_DIR / 'sam2'))",
     "",
     "IMG_DIR  = ROOT / 'data' / 'raw' / 'stmd' / 'images'",
     "LBL_DIR  = ROOT / 'data' / 'raw' / 'stmd' / 'labels'",

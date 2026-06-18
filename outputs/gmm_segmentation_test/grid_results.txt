@@ -1,0 +1,12 @@
+# Grille PCA_DIM × REG_COVAR — percentile=5
+
+ PCA_DIM   REG_COVAR   % inconnu    Accuracy    N reconnus
+──────────────────────────────────────────────────────────────
+      10       1e-03       18.6%       97.1%            57
+      10       1e-02        8.6%       97.1%            64
+      10       1e-01        5.7%       95.2%            66  ← BEST
+      20       1e-03       25.7%       97.8%            52
+      20       1e-02        5.7%       97.1%            66
+      20       1e-01        5.7%       97.1%            66
+
+Meilleure : PCA=10d  reg=1e-01  inconnu=5.7%  accuracy=95.2%
