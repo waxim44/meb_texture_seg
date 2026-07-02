@@ -1,0 +1,117 @@
+======================================================================
+ÉTAPE 0 — Chargement + contrôles d'intégrité
+======================================================================
+OK — Tous les 6 blocks : 3583 patches dans le même ordre.
+OK — Aucun patch hors-image.
+
+N patches par texture :
+  Tot.homogène         (t=1) : N= 41  ⚠ MAD_PEU_FIABLE
+  Faisceaux            (t=3) : N= 68  
+  Filaments            (t=4) : N= 49  ⚠ MAD_PEU_FIABLE
+  Strat.rect           (t=5) : N= 64  
+  Strat.sin            (t=6) : N=129  
+  Granuleux            (t=7) : N=409  
+  Trou                 (t=9) : N= 56  
+
+======================================================================
+ÉTAPES 1 & 2 — Métriques A (densité classe) et B (pureté voisinage)
+======================================================================
+
+  Block : stage_1_fpn
+    A mean=0.0077  B mean=0.4863
+
+  Block : stage_2_fpn
+    penche_vers calculé sur stage_2_fpn
+    A mean=0.0331  B mean=0.6463
+
+  Block : block_4
+    A mean=0.0861  B mean=0.4565
+
+  Block : block_7
+    A mean=0.2028  B mean=0.6072
+
+  Block : stage_3_fpn
+    A mean=0.1094  B mean=0.7185
+
+  Block : stage_4_fpn
+    A mean=0.1199  B mean=0.6768
+
+======================================================================
+ÉTAPE 3 — Métrique C (intensité pixels, hors-block)
+======================================================================
+  C_int : mean=-1.17  std=17.35
+  C_uni : mean=17.36  std=7.39
+
+======================================================================
+ÉTAPE 4 — Scores MAD par classe
+======================================================================
+
+======================================================================
+ÉTAPE 5 — Consensus niveau 1 (inter-blocks)
+======================================================================
+  extr_A (≥67% blocks) : 18 patches
+  extr_B (≥67% blocks) : 4 patches
+
+======================================================================
+ÉTAPE 6 — Consensus niveau 2 (inter-métriques)
+======================================================================
+  Outliers (consensus≥1) : 34 / 816 patches
+
+======================================================================
+ÉTAPE 7 — Robustesse au choix de k (sur stage_2_fpn)
+======================================================================
+  Métrique A : stable=40/49 = 81.6%  ✓ k non-critique
+    k= 8 → 46 extrêmes
+    k=10 → 43 extrêmes
+    k=15 → 43 extrêmes
+  Métrique B : stable=11/43 = 25.6%  ⚠ FRAGILE
+    k= 8 → 21 extrêmes
+    k=10 → 43 extrêmes
+    k=15 → 12 extrêmes
+
+======================================================================
+ÉTAPE 8 — Génération des sorties
+======================================================================
+  outliers.csv : 34 entrées (consensus≥1)
+  references.csv : 0 entrées
+
+  Génération des PNGs individuels...
+  0 PNGs générés
+
+  Génération des grilles par texture...
+
+======================================================================
+SORTIES — RÉSUMÉ
+======================================================================
+
+1) SENSIBILITÉ
+  Texture                 N           MAD     ≥1     ≥2     ≥3
+  ------------------------------------------------------------
+  Tot.homogène           41  MAD_PEU_FIABLE      3      0      0
+  Faisceaux              68            OK      2      0      0
+  Filaments              49  MAD_PEU_FIABLE      1      0      0
+  Strat.rect             64            OK     11      0      0
+  Strat.sin             129            OK      4      0      0
+  Granuleux             409            OK     10      0      0
+  Trou                   56            OK      3      0      0
+
+2) PAR MÉTRIQUE (extrêmes niveau 1)
+  A seule (extr_A and not extr_B and not extr_C) : 18
+  B seule (extr_B and not extr_A and not extr_C) : 4
+  C seule (extr_C and not extr_A and not extr_B) : 12
+  A+B (sans C)                                   : 0
+  A+C (sans B)                                   : 0
+  B+C (sans A)                                   : 0
+  A+B+C                                          : 0
+  Total extrêmes A : 18  B : 4  C : 12
+
+3) RÉPARTITION PAR STADE (outliers≥2)
+  Aucun outlier≥2.
+
+4) CONCENTRATION PAR IMAGE (outliers≥2)
+
+5) CONFUSION (penche_vers, outliers≥2)
+
+6) ROBUSTESSE k (stage_2_fpn)
+  Métrique A (stage_2_fpn) : stable 81.6% → k non-critique ✓
+  Métrique B (stage_2_fpn) : stable 25.6% → FRAGILE ⚠

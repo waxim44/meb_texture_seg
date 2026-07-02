@@ -1,0 +1,120 @@
+Chargement H5...
+  816 patches, 7 textures
+
+Recalcul métriques A, B, C...
+  extr_A : 18  extr_B : 4  extr_C : 12
+  A∩C : 0  (0 = orthogonales)
+
+============================================================
+PARTIE 1 — Patches flaggés par A (isolement géométrique)
+============================================================
+  18 patches
+  [Tot.homogène] score_A=4.21 frac=5/6 vote_dom=intermédiaire (4/6) img=060525-JPB-MEB-EIHNValves-Ech1-ZigZag20040.tif
+  [Strat.rect] score_A=11.51 frac=6/6 vote_dom=intermédiaire (4/6) img=060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif
+  [Strat.rect] score_A=9.22 frac=6/6 vote_dom=intermédiaire (4/6) img=060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif
+  [Granuleux] score_A=3.60 frac=6/6 vote_dom=intermédiaire (4/6) img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-37.tif
+  [Granuleux] score_A=3.14 frac=4/6 vote_dom=intermédiaire (3/6) img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-2-15.tif
+  [Strat.rect] score_A=3.08 frac=4/6 vote_dom=intermédiaire (3/6) img=070525-JPB-MEB-EIHNValves-Ech4-ZigZag0019.tif
+  [Strat.rect] score_A=2.64 frac=6/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif
+  [Strat.rect] score_A=4.22 frac=6/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif
+  [Strat.rect] score_A=3.06 frac=5/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif
+  [Strat.rect] score_A=10.37 frac=5/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif
+  [Faisceaux] score_A=-0.90 frac=5/6 vote_dom=intermédiaire (3/6) img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif
+  [Strat.rect] score_A=7.40 frac=6/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif
+  [Faisceaux] score_A=2.34 frac=4/6 vote_dom=intermédiaire (3/6) img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif
+  [Strat.rect] score_A=5.44 frac=5/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif
+  [Strat.rect] score_A=3.03 frac=5/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif
+  [Tot.homogène] score_A=4.83 frac=6/6 vote_dom=intermédiaire (4/6) img=070525-JPB-MEB-EIHNValves-Ech6-ZigZag0077.tif
+  [Strat.rect] score_A=2.71 frac=5/6 vote_dom=intermédiaire (3/6) img=070525-JPB-MEB-EIHNValves-Ech6-ZigZag0100.tif
+  [Filaments] score_A=8.22 frac=5/6 vote_dom=intermédiaire (4/6) img=070722-Nabila-JP-Valves-WholeMount-SAureus-pat10-00.tif
+
+============================================================
+PARTIE 2 — Patches flaggés par C (intensité relative)
+============================================================
+  12 patches
+  [Trou] C_int=-3.6 (SOMBRE) sMAD_int=3.58 sMAD_uni=0.43 img=060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.tif
+  [Granuleux] C_int=-9.6 (SOMBRE) sMAD_int=-0.80 sMAD_uni=3.67 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-27.tif
+  [Granuleux] C_int=+16.7 (CLAIR) sMAD_int=0.92 sMAD_uni=4.23 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-27.tif
+  [Granuleux] C_int=+21.3 (CLAIR) sMAD_int=1.22 sMAD_uni=3.67 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-27.tif
+  [Trou] C_int=-2.0 (SOMBRE) sMAD_int=3.74 sMAD_uni=0.55 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-37.tif
+  [Trou] C_int=-79.3 (SOMBRE) sMAD_int=-3.95 sMAD_uni=-0.63 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-37.tif
+  [Granuleux] C_int=+63.6 (CLAIR) sMAD_int=3.98 sMAD_uni=0.65 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-2-15.tif
+  [Strat.sin] C_int=-44.7 (SOMBRE) sMAD_int=-3.99 sMAD_uni=1.40 img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif
+  [Tot.homogène] C_int=+14.6 (CLAIR) sMAD_int=0.48 sMAD_uni=3.90 img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0073.tif
+  [Strat.sin] C_int=-19.5 (SOMBRE) sMAD_int=-1.78 sMAD_uni=4.01 img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif
+  [Strat.sin] C_int=-6.6 (SOMBRE) sMAD_int=-0.65 sMAD_uni=3.77 img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif
+  [Strat.sin] C_int=-2.4 (SOMBRE) sMAD_int=-0.28 sMAD_uni=3.78 img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif
+
+============================================================
+PARTIE 3A — Stabilité MAD (2.5 → 2.0)
+============================================================
+  Métrique A | seuil=2.5 : 18  seuil=2.0 : 28
+    Stables dans les 2 : 18 / 28 = 64.3%  → fragile ⚠
+    Nouveaux à 2.0 : 10 (patches borderline)
+      pid=1391 Filaments frac20=4/6 img=060525-JPB-MEB-EIHNValves-Ech3-ZigZag0061.tif
+      pid=1714 Granuleux frac20=4/6 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-27.tif
+      pid=1788 Granuleux frac20=4/6 img=060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-37.tif
+      pid=2320 Strat.sin frac20=4/6 img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0003.tif
+      pid=2728 Strat.sin frac20=4/6 img=070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif
+
+  Métrique C | seuil=3.5 : 12  seuil=3.0 : 33
+    Stables : 12/33 = 36.4%
+    Abandonnés en montant de 3.0→3.5 : 21 (borderlines éliminés)
+
+  Génération distribution_scores.png...
+
+  Écart score_A des flaggés vs médiane de leur classe :
+  Tot.homogène : médiane_classe=0.00  scores_flaggés=[4.83,4.21]  Δ_min=4.21
+  Faisceaux : médiane_classe=0.00  scores_flaggés=[2.34,-0.90]  Δ_min=-0.90
+  Filaments : médiane_classe=0.00  scores_flaggés=[8.22]  Δ_min=8.22
+  Strat.rect : médiane_classe=0.00  scores_flaggés=[11.51,10.37,9.22,7.40,5.44,4.22,3.08,3.06,3.03,2.71,2.64]  Δ_min=2.64
+  Granuleux : médiane_classe=0.00  scores_flaggés=[3.60,3.14]  Δ_min=3.14
+
+============================================================
+PARTIE 4 — Croisement avec LP LOIO (pires patches)
+============================================================
+  Calcul LOIO multiclasse sur stage_2_fpn...
+  Patches mal classés par LP (proba<0.5): 759
+
+  A flaggés (18) :
+    Aussi mal classés LP : 17  (94%)  → outliers RÉELS (A et LP concordent)
+    Bien classés par LP  : 1 (6%)  → atypiques géométriques BÉNINS (LP les classe bien)
+
+  C flaggés (12) :
+    Aussi mal classés LP : 10  (83%)  → intensité ET classification anormales
+    Bien classés par LP  : 2 (17%)  → anomalie d'intensité BÉNIGNE (LP robuste)
+
+  Par texture :
+  Texture          N_A  N_C   A+LP   C+LP lp_proba_moy_A
+  Tot.homogène       2    1      1      1          0.405
+  Faisceaux          2    0      2      0          0.123
+  Filaments          1    0      1      0          0.087
+  Strat.rect        11    0     11      0          0.067
+  Strat.sin          0    4      0      3            nan
+  Granuleux          2    4      2      4          0.130
+  Trou               0    3      0      2            nan
+
+============================================================
+VERDICT FACTUEL
+============================================================
+
+A (18 patches) :
+  Dominante INTERMÉDIAIRE (vrais outliers texture) : 18
+  Dominante PRÉCOCE (artefacts position)          : 0
+  Images concentrées (≥3 outliers A) : 2
+    070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif : 4 patches A
+    070525-JPB-MEB-EIHNValves-Ech4-ZigZag0103.tif : 3 patches A
+
+C (12 patches) :
+  Images concentrées (≥3 outliers C) : 2
+    060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-27.tif : 3 patches C
+    070525-JPB-MEB-EIHNValves-Ech5-ZigZag0078.tif : 3 patches C
+
+Croisement LP (LOIO, stage_2_fpn) :
+  A concordant avec LP : 17/18
+  C concordant avec LP : 10/12
+
+  Verdict A : SIGNAL — vrais cas limites géométriques
+  Verdict C : SIGNAL — intensité corrèle avec difficulté LP
+
+⚠ Inspection seule. Aucun retrait.
