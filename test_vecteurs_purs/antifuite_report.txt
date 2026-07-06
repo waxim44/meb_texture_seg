@@ -1,0 +1,9 @@
+RAPPORT ANTI-FUITE
+──────────────────────────────────────────────────
+  Fold '060525-JPB-MEB-EIHNValves-Ech1-ZigZag20002' : test=18 patches, train=798 patches → OK (∅)
+  Fold '060525-JPB-MEB-EIHNValves-Ech1-ZigZag20006' : test=5 patches, train=811 patches → OK (∅)
+  Fold '060525-JPB-MEB-EIHNValves-Ech1-ZigZag20033' : test=13 patches, train=803 patches → OK (∅)
+  Fold '060525-JPB-MEB-EIHNValves-Ech1-ZigZag20040' : test=5 patches, train=811 patches → OK (∅)
+  Fold '060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066' : test=20 patches, train=796 patches → OK (∅)
+
+✓ Aucune fuite détectée
