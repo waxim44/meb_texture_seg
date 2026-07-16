@@ -1,0 +1,13 @@
+Test — SVM (linéaire + RBF) vs LP : la non-linéarité débloque-t-elle les textures ?
+H5 : data/feature_database/database_meb_ouassim.h5
+
+1) Meilleur bloc par classifieur :
+  Tot.homogène     LP:block_4(1.000)  SVMlin:block_4(1.000)  SVMrbf:block_8(0.999)  ΔAUC=-0.001
+  Faisceaux        LP:stage_3_fpn(0.734)  SVMlin:block_9(0.779)  SVMrbf:stage_3_fpn(0.775)  ΔAUC=+0.042
+  Filaments        LP:block_9(0.873)  SVMlin:block_9(0.855)  SVMrbf:block_9(0.843)  ΔAUC=-0.031
+  Strat.rect       LP:block_9(0.882)  SVMlin:block_5(0.880)  SVMrbf:block_9(0.869)  ΔAUC=-0.014
+  Strat.sin        LP:block_15(0.750)  SVMlin:stage_3_fpn(0.705)  SVMrbf:stage_4_fpn(0.719)  ΔAUC=-0.031
+  Granuleux        LP:block_10(0.892)  SVMlin:block_7(0.903)  SVMrbf:block_7(0.911)  ΔAUC=+0.019
+  Trou             LP:block_9(0.946)  SVMlin:block_4(0.950)  SVMrbf:stage_2_fpn(0.944)  ΔAUC=-0.002
+
+Voir stdout du script pour le détail des sections 2-6 (focus, surapprentissage, stabilité hyperparamètres, anti-fuite).

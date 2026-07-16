@@ -1,0 +1,13 @@
+══════════════════════════════════════════════════════════════════════
+PHASE 1 — Rapport de validation
+══════════════════════════════════════════════════════════════════════
+TEST PIXEL-PERFECT : 180/180 passent
+TEST BORNES : 21600 (image, patch, t) vérifiés sans dépassement
+TEST VISUEL : exemples sauvegardés dans /home/aidouni/meb_texture_seg/lora_supcon/phase_1/visual_examples.png
+
+── VALIDATION P1 ──
+[x] TEST PIXEL-PERFECT (100% requis)
+[x] TEST VISUEL (3 exemples générés — inspection manuelle requise)
+[x] Aucun patch hors bornes
+
+VERDICT : GO

@@ -1,0 +1,42 @@
+══════════════════════════════════════════════════════════════════════
+PHASE 0 — Rapport de validation
+══════════════════════════════════════════════════════════════════════
+── 1. Source des données (Ouassim vs PatchTagger) ──
+H5 utilisé   : /home/aidouni/meb_texture_seg/data/feature_database/database_meb_ouassim.h5
+Existe       : True
+Images (dir) : /home/aidouni/meb_texture_seg/Image_Ouassim
+Nb fichiers .tif : 60
+Exemple : 060525-JPB-MEB-EIHNValves-Ech1-ZigZag20002.tif  mode=L  shape=(768, 1280)  dtype=uint8  mean=85.54
+[x] Ouassim confirmé (grayscale=True, mean plausible=True)
+
+── 2. GPU ──
+CUDA disponible : True
+Device : NVIDIA GeForce RTX 4090
+Mémoire libre / totale : 23.6 / 25.2 GB
+
+── 3. Checkpoint sam2_hiera_s ──
+Chemin : /home/aidouni/meb_texture_seg/checkpoints/sam2.1_hiera_small_1.pt
+Existe : True
+Clés trunk trouvées dans le checkpoint : 202
+Clés manquantes après chargement : 0
+Clés inattendues (ignorées) : 0
+[x] checkpoint OK (Hiera chargé, strict sur trunk)
+
+── 4. Inventaire des patchs par texture ──
+Nb images (H5) : 60
+  Totalement homogène       attendu=  41  trouvé=  41  OK
+  Trou                      attendu=  56  trouvé=  56  OK
+  Granuleux                 attendu= 409  trouvé= 409  OK
+  Stratifié rectiligne      attendu=  64  trouvé=  64  OK
+  Filaments                 attendu=  49  trouvé=  49  OK
+  Stratifié sinueux         attendu= 129  trouvé= 129  OK
+  Faisceaux                 attendu=  68  trouvé=  68  OK
+[x] inventaire affiché et conforme
+
+── VALIDATION P0 ──
+[x] Ouassim confirmé
+[x] checkpoint OK
+[x] inventaire affiché
+[x] GPU disponible
+
+VERDICT : GO

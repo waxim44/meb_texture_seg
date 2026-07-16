@@ -1,0 +1,97 @@
+══════════════════════════════════════════════════════════════════════
+PHASE 4 — Rapport de validation (fold pilote)
+══════════════════════════════════════════════════════════════════════
+Image de test : 060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-22.tif
+Images de validation (early stopping) : ['060722-Nabila-JP-Valves-WholeMount-SAureus-pat02-28.tif', '070525-JPB-MEB-EIHNValves-Ech5-ZigZag0051.tif', '060525-JPB-MEB-EIHNValves-Ech2-ZigZag0036.tif']
+[x] Contrôle anti-fuite statique : image de test absente des images de validation
+Images train (LoRA) : 56  |  val : 3  |  test : 1
+Patchs train par texture : Totalement homogène=41, Trou=51, Granuleux=323, Stratifié sinueux=93, Stratifié rectiligne=62, Faisceaux=42, Filaments=38
+Patchs val par texture   : Trou=2, Stratifié sinueux=36, Granuleux=56, Faisceaux=7, Filaments=11, Stratifié rectiligne=2
+[x] Test d'identité re-vérifié (B=0 avant entraînement) : écart max = 0.000e+00
+
+── Entraînement LoRA (fold pilote) ──
+Images sources train (pool) : 38  |  val : 3  |  max images/step (borne mutualisation) : 10
+  step    1  train_loss=3.3637  batch_size=42  n_images_batch=9  step_time=437ms  avg=437ms
+  step    2  train_loss=3.3301  batch_size=42  n_images_batch=8  step_time=271ms  avg=354ms
+  step    3  train_loss=3.3203  batch_size=42  n_images_batch=9  step_time=306ms  avg=338ms
+  step    4  train_loss=3.1432  batch_size=42  n_images_batch=10  step_time=334ms  avg=337ms
+  step    5  train_loss=3.3133  batch_size=42  n_images_batch=9  step_time=303ms  avg=330ms
+  step   10  train_loss=3.2682  batch_size=42  n_images_batch=10  step_time=335ms  avg=319ms
+  step   20  train_loss=3.2210  batch_size=42  n_images_batch=9  step_time=304ms  avg=312ms
+  [EVAL] step   25  train_loss=3.1958  val_loss=3.1170  best_val=3.1170  patience=0/10  elapsed=8s
+  step   30  train_loss=3.3485  batch_size=42  n_images_batch=10  step_time=336ms  avg=312ms
+  step   40  train_loss=2.9791  batch_size=42  n_images_batch=8  step_time=276ms  avg=312ms
+  step   50  train_loss=2.9616  batch_size=42  n_images_batch=9  step_time=305ms  avg=311ms
+  [EVAL] step   50  train_loss=2.9616  val_loss=3.0569  best_val=3.0569  patience=0/10  elapsed=16s
+  step   60  train_loss=3.0499  batch_size=42  n_images_batch=10  step_time=337ms  avg=310ms
+  step   70  train_loss=3.0547  batch_size=42  n_images_batch=9  step_time=305ms  avg=308ms
+  [EVAL] step   75  train_loss=2.9640  val_loss=2.9225  best_val=2.9225  patience=0/10  elapsed=24s
+  step   80  train_loss=2.7875  batch_size=42  n_images_batch=9  step_time=307ms  avg=309ms
+  step   90  train_loss=2.5982  batch_size=42  n_images_batch=10  step_time=337ms  avg=309ms
+  step  100  train_loss=2.7107  batch_size=42  n_images_batch=9  step_time=307ms  avg=311ms
+  [EVAL] step  100  train_loss=2.7107  val_loss=2.7172  best_val=2.7172  patience=0/10  elapsed=32s
+  step  110  train_loss=2.7543  batch_size=42  n_images_batch=10  step_time=338ms  avg=310ms
+  step  120  train_loss=2.5034  batch_size=42  n_images_batch=9  step_time=306ms  avg=310ms
+  [EVAL] step  125  train_loss=2.7931  val_loss=2.7777  best_val=2.7172  patience=1/10  elapsed=40s
+  step  130  train_loss=2.3185  batch_size=42  n_images_batch=9  step_time=304ms  avg=310ms
+  step  140  train_loss=2.3286  batch_size=42  n_images_batch=9  step_time=304ms  avg=309ms
+  step  150  train_loss=2.3401  batch_size=42  n_images_batch=10  step_time=338ms  avg=309ms
+  [EVAL] step  150  train_loss=2.3401  val_loss=2.8533  best_val=2.7172  patience=2/10  elapsed=48s
+  step  160  train_loss=2.4842  batch_size=42  n_images_batch=9  step_time=304ms  avg=309ms
+  step  170  train_loss=2.2436  batch_size=42  n_images_batch=9  step_time=305ms  avg=309ms
+  [EVAL] step  175  train_loss=2.3250  val_loss=2.9758  best_val=2.7172  patience=3/10  elapsed=56s
+  step  180  train_loss=2.4757  batch_size=42  n_images_batch=10  step_time=337ms  avg=309ms
+  step  190  train_loss=2.2596  batch_size=42  n_images_batch=9  step_time=305ms  avg=308ms
+  step  200  train_loss=2.3629  batch_size=42  n_images_batch=9  step_time=307ms  avg=309ms
+  [EVAL] step  200  train_loss=2.3629  val_loss=3.0049  best_val=2.7172  patience=4/10  elapsed=64s
+  step  210  train_loss=2.2459  batch_size=42  n_images_batch=9  step_time=305ms  avg=308ms
+  step  220  train_loss=2.3011  batch_size=42  n_images_batch=9  step_time=309ms  avg=308ms
+  [EVAL] step  225  train_loss=2.4596  val_loss=2.9303  best_val=2.7172  patience=5/10  elapsed=71s
+  step  230  train_loss=2.3098  batch_size=42  n_images_batch=9  step_time=309ms  avg=308ms
+  step  240  train_loss=2.2655  batch_size=42  n_images_batch=9  step_time=306ms  avg=309ms
+  step  250  train_loss=2.0865  batch_size=42  n_images_batch=10  step_time=338ms  avg=309ms
+  [EVAL] step  250  train_loss=2.0865  val_loss=2.9393  best_val=2.7172  patience=6/10  elapsed=79s
+  step  260  train_loss=2.3254  batch_size=42  n_images_batch=9  step_time=308ms  avg=309ms
+  step  270  train_loss=2.1993  batch_size=42  n_images_batch=9  step_time=305ms  avg=309ms
+  [EVAL] step  275  train_loss=2.3139  val_loss=3.0234  best_val=2.7172  patience=7/10  elapsed=88s
+  step  280  train_loss=2.3627  batch_size=42  n_images_batch=10  step_time=339ms  avg=309ms
+  step  290  train_loss=2.1045  batch_size=42  n_images_batch=10  step_time=339ms  avg=310ms
+  step  300  train_loss=2.1802  batch_size=42  n_images_batch=10  step_time=339ms  avg=310ms
+  [EVAL] step  300  train_loss=2.1802  val_loss=3.0070  best_val=2.7172  patience=8/10  elapsed=96s
+  step  310  train_loss=2.2705  batch_size=42  n_images_batch=10  step_time=336ms  avg=310ms
+  step  320  train_loss=2.2201  batch_size=42  n_images_batch=8  step_time=273ms  avg=310ms
+  [EVAL] step  325  train_loss=2.0865  val_loss=3.1057  best_val=2.7172  patience=9/10  elapsed=104s
+  step  330  train_loss=2.2204  batch_size=42  n_images_batch=8  step_time=275ms  avg=310ms
+  step  340  train_loss=2.3067  batch_size=42  n_images_batch=10  step_time=344ms  avg=310ms
+  step  350  train_loss=2.1410  batch_size=42  n_images_batch=8  step_time=277ms  avg=309ms
+  [EVAL] step  350  train_loss=2.1410  val_loss=2.9082  best_val=2.7172  patience=10/10  elapsed=112s
+  → early stopping à step 350
+Temps entraînement total : 111.5s  |  Temps moyen/step : 309ms  |  Mémoire GPU pic : 5.70 GB
+Courbes sauvées : /home/aidouni/meb_texture_seg/lora_supcon/phase_4/loss_curves.png
+
+── Ré-extraction features (encodeur adapté), toutes images ──
+  ré-extraction image 1/60
+  ré-extraction image 21/60
+  ré-extraction image 41/60
+Features ré-extraites : 816 patchs, 16 blocs
+
+── Contrôle anti-fuite (extraction) ──
+[x] '060722-Nabila-JP-Valves-WholeMount-SAureus-pat04-1-22' présent en test uniquement (assert dans loio_single_fold)
+
+Texture                  block(zs)   AUC zero-shot   AUC LoRA     ΔAUC  n_test
+--------------------------------------------------------------------------------
+Totalement homogène      n/a                   n/a        n/a      n/a       0
+Trou                     block_0             0.993      0.986   -0.007      52
+Granuleux                block_9             0.661      0.745   +0.085      52
+Stratifié rectiligne     n/a                   n/a        n/a      n/a       0
+Filaments                n/a                   n/a        n/a      n/a       0
+Stratifié sinueux        n/a                   n/a        n/a      n/a       0
+Faisceaux                block_15            0.687      0.617   -0.070      52
+
+── VALIDATION P4 ──
+[x] Test d'identité re-vérifié (B=0)
+[x] Courbes de loss train/val affichées
+[x] ΔAUC par texture sur le fold pilote (tableau ci-dessus)
+[x] Contrôle anti-fuite : asserts sur les noms d'images (train batches, val batches, LOIO)
+
+VERDICT : GO (analyse humaine du pilote requise avant Phase 5)
