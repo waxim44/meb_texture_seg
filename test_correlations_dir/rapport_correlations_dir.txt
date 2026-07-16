@@ -1,0 +1,13 @@
+Test — corrélations directionnelles : l'orientation débloque-t-elle les textures ?
+H5 : data/feature_database/database_meb_ouassim.h5
+
+Verdict par texture :
+  Tot.homogène     signal réel mais redondant avec la moyenne (V2≈V1, V3>hasard)
+  Faisceaux        pas de signal d'orientation (V3≈hasard, V2≈V1)
+  Filaments        signal réel mais redondant avec la moyenne (V2≈V1, V3>hasard)
+  Strat.rect       signal réel mais redondant avec la moyenne (V2≈V1, V3>hasard)
+  Strat.sin        signal réel mais redondant avec la moyenne (V2≈V1, V3>hasard)
+  Granuleux        signal réel mais redondant avec la moyenne (V2≈V1, V3>hasard)
+  Trou             signal réel mais redondant avec la moyenne (V2≈V1, V3>hasard)
+
+Voir stdout du script pour le détail (tableaux 1-4, checklist, alertes).

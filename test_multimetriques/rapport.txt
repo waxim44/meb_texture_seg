@@ -1,0 +1,21 @@
+Test multi-métriques — séparabilité des textures (LP LOIO)
+H5 : data/feature_database/database_meb_ouassim.h5
+Patches : 816 | Blocs : 20 | Images : 42
+
+Texture          Meilleur bloc      AUC   Recall  Précision      F1  n_folds  Diagnostic
+Tot.homogène     block_4          1.000    1.000      1.000   1.000        9  séparation solide
+Trou             block_9          0.946    0.804      0.682   0.738       16  intermédiaire
+Granuleux        block_10         0.892    0.814      0.912   0.860       21  séparation solide
+Strat.rect       block_9          0.882    0.703      0.763   0.732       10  séparation solide
+Filaments        block_9          0.873    0.878      0.717   0.789        8  séparation solide
+Strat.sin        block_15         0.750    0.667      0.656   0.662       14  intermédiaire
+Faisceaux        stage_3_fpn      0.734    0.809      0.444   0.573       10  biais recall possible
+
+Comparaison ancien recall seul vs nouveau :
+Tot.homogène     ancien=1.00 nouveau=1.000 écart=+0.000 AUC=1.000 précision=1.000
+Faisceaux        ancien=0.79 nouveau=0.809 écart=+0.019 AUC=0.734 précision=0.444
+Filaments        ancien=0.84 nouveau=0.878 écart=+0.038 AUC=0.873 précision=0.717
+Strat.rect       ancien=0.50 nouveau=0.703 écart=+0.203 AUC=0.882 précision=0.763
+Strat.sin        ancien=0.52 nouveau=0.667 écart=+0.147 AUC=0.750 précision=0.656
+Granuleux        ancien=0.86 nouveau=0.814 écart=-0.046 AUC=0.892 précision=0.912
+Trou             ancien=0.74 nouveau=0.804 écart=+0.064 AUC=0.946 précision=0.682

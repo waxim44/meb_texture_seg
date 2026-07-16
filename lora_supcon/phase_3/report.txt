@@ -1,0 +1,50 @@
+══════════════════════════════════════════════════════════════════════
+PHASE 3 — Rapport de validation
+══════════════════════════════════════════════════════════════════════
+Mini-sous-ensemble : 2 images, 50 patchs
+  Faisceaux                 : 10 patchs
+  Granuleux                 : 13 patchs
+  Trou                      : 2 patchs
+  Stratifié rectiligne      : 24 patchs
+  Stratifié sinueux         : 1 patchs
+
+── 1. OVERFIT VOLONTAIRE (LoRA entraîné, sans augmentation) ──
+  [train] step   0  loss=3.5391  batch_size=50
+  [train] step  20  loss=2.5583  batch_size=50
+  [train] step  40  loss=2.4114  batch_size=50
+  [train] step  60  loss=2.2427  batch_size=50
+  [train] step  80  loss=2.2109  batch_size=50
+  [train] step 100  loss=2.2046  batch_size=50
+  [train] step 120  loss=2.2008  batch_size=50
+  [train] step 140  loss=2.2000  batch_size=50
+  [train] step 160  loss=2.1996  batch_size=50
+  [train] step 180  loss=2.1988  batch_size=50
+  [train] step 199  loss=2.1986  batch_size=50
+
+── 2. CONTRÔLE NÉGATIF (LoRA gelé) ──
+  [frozen] step   0  loss=3.5391  batch_size=50
+  [frozen] step  20  loss=3.3567  batch_size=50
+  [frozen] step  40  loss=3.2658  batch_size=50
+  [frozen] step  60  loss=3.5396  batch_size=50
+  [frozen] step  80  loss=3.4649  batch_size=50
+  [frozen] step 100  loss=3.4882  batch_size=50
+  [frozen] step 120  loss=3.5083  batch_size=50
+  [frozen] step 140  loss=3.4966  batch_size=50
+  [frozen] step 160  loss=3.5345  batch_size=50
+  [frozen] step 180  loss=3.4001  batch_size=50
+  [frozen] step 199  loss=3.5496  batch_size=50
+
+── 3. MÉMOIRE / TEMPS ──
+Temps moyen/step (train)  : 97.9 ms
+Temps moyen/step (frozen) : 63.8 ms
+Mémoire GPU pic (train)   : 1.84 GB
+Mémoire GPU pic (frozen)  : 1.84 GB
+
+── VALIDATION P3 ──
+Loss train : early=3.1949  late=2.1986  chute=31.2%
+[x] OVERFIT VOLONTAIRE (chute forte, >30% attendu)
+Loss frozen : early=3.5211  late=3.5158  variation=0.2%
+[x] Contrôle négatif (loss stable, <5% variation)
+[x] Mémoire / temps par step affichés
+
+VERDICT : GO

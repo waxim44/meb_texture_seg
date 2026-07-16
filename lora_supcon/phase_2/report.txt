@@ -1,0 +1,39 @@
+══════════════════════════════════════════════════════════════════════
+PHASE 2 — Rapport de validation
+══════════════════════════════════════════════════════════════════════
+── 1. TEST D'IDENTITÉ (B=0) ──
+Patchs testés : 15
+Écart max sur tous les blocs (0-15), tous les patchs : 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20002.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20005.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20006.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20033.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20047.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech1-ZigZag20066.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0005.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0037.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0042.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0045.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0102.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0121.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech2-ZigZag0122.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech3-ZigZag0032.tif : écart max = 0.000e+00
+  060525-JPB-MEB-EIHNValves-Ech3-ZigZag0036.tif : écart max = 0.000e+00
+[x] TEST D'IDENTITÉ (écart < 1e-05)
+
+── 2. TEST GRADIENTS ──
+Params lora_B avec gradient non-nul : 10/10
+Note : lora_A a un gradient nul à l'init car B=0 (dL/dA passe par B dans la règle de chaîne) — c'est le comportement LoRA attendu, pas une anomalie.
+Params gelés (hors LoRA) avec gradient non-nul (attendu 0) : 0
+[x] Seuls les params LoRA reçoivent un gradient (B non-nul, reste gelé)
+
+── 3. PARAMÈTRES ENTRAÎNABLES ──
+Entraînables : 122,880 / 34,439,872 (0.3568%)
+[x] < 1% de paramètres entraînables
+
+── VALIDATION P2 ──
+[x] TEST D'IDENTITÉ (B=0, écart < 1e-05)
+[x] Gradients : seuls A, B non-nuls
+[x] % params entraînables < 1%
+
+VERDICT : GO

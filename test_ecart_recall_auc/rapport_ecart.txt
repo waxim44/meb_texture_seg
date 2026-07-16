@@ -1,0 +1,20 @@
+Test — origine de l'écart ancien recall vs nouvelles métriques (AUC etc.)
+H5 : data/feature_database/database_meb_ouassim.h5
+
+1) Contrôle de cohérence (même bloc, recalcul indépendant) :
+  Strat.rect: bloc=block_9 — recall reproductible (voir stdout)
+  Faisceaux: bloc=stage_3_fpn — recall reproductible (voir stdout)
+  Granuleux: bloc=block_10 — recall reproductible (voir stdout)
+
+2) Bloc max-recall vs bloc max-AUC :
+  Tot.homogène     max-recall→block_2 (recall=1.000, AUC=0.989)  |  max-AUC→block_4 (recall=1.000, AUC=1.000)  même bloc=False
+  Faisceaux        max-recall→stage_3_fpn (recall=0.809, AUC=0.734)  |  max-AUC→stage_3_fpn (recall=0.809, AUC=0.734)  même bloc=True
+  Filaments        max-recall→block_10 (recall=0.898, AUC=0.864)  |  max-AUC→block_9 (recall=0.878, AUC=0.873)  même bloc=False
+  Strat.rect       max-recall→block_9 (recall=0.703, AUC=0.882)  |  max-AUC→block_9 (recall=0.703, AUC=0.882)  même bloc=True
+  Strat.sin        max-recall→block_10 (recall=0.705, AUC=0.687)  |  max-AUC→block_15 (recall=0.667, AUC=0.750)  même bloc=False
+  Granuleux        max-recall→block_7 (recall=0.851, AUC=0.883)  |  max-AUC→block_10 (recall=0.814, AUC=0.892)  même bloc=False
+  Trou             max-recall→stage_1_fpn (recall=0.857, AUC=0.920)  |  max-AUC→block_9 (recall=0.804, AUC=0.946)  même bloc=False
+
+3) Voir recall_precision_vs_seuil.png pour l'effet du seuil.
+
+Conclusion : voir stdout du script pour le détail par texture.
