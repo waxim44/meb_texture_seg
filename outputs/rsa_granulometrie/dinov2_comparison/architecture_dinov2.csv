@@ -1,0 +1,4 @@
+model,embed_dim,patch_size,depth,n_heads,n_registers,n_params
+dinov2_vits14_reg,384,14,12,6,4,22058112
+dinov2_vitb14,768,14,12,12,0,86580480
+dinov2_vitb14_reg,768,14,12,12,4,86583552

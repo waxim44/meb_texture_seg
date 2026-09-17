@@ -63,3 +63,4 @@ mlruns/
 # Numpy / temporary
 *.npy
 *.npz
+outputs/rsa_granulometrie/eta_analysis/tokens_bruts.pkl

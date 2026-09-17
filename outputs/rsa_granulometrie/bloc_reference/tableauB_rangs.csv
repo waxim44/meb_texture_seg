@@ -1,0 +1,11 @@
+metric,indicateur,block_4,block_6,block_9
+D50,R2,1.5,1.5,3.0
+D50,MedAE,1.5,1.5,3.0
+D90,R2,1.5,1.5,3.0
+D90,MedAE,2.0,2.0,2.0
+Span,R2,1.5,1.5,3.0
+Span,MedAE,2.0,2.0,2.0
+Skewness,R2,1.5,1.5,3.0
+Skewness,MedAE,2.0,2.0,2.0
+sigma_local,R2,2.0,2.0,2.0
+sigma_local,MedAE,2.0,2.0,2.0

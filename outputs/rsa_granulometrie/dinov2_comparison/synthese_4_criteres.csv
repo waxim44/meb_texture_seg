@@ -1,0 +1,6 @@
+critere,"DINOv2 (vits14_reg, layer_03)",TextureSAM (block_4),"TextureSAM (block_9, meilleure orthogonalite)"
+R2 moyen (5 metriques),0.596,0.653,
+R2 D50,0.696,0.748,
+Stabilite w (cos moyen folds),0.827,0.855,
+"Orthogonalite taille/sigma_local (|cos| moyen, plus bas=mieux)",0.035,0.157,0.042
+eta2 (information conservee par moyennage),0.616,0.419,

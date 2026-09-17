@@ -1,0 +1,5 @@
+level,n_components_mean,n_components_std
+50%,5.0,0.0
+75%,10.0,0.0
+95%,35.0,0.0
+brut (100%),384.0,0.0

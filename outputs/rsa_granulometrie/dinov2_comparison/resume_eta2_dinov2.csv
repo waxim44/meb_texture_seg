@@ -1,0 +1,2 @@
+model,layer,n_p_min,n_p_median,n_p_max,n_le2,SS_total,SS_inter,SS_intra,erreur_identite,eta2,un_moins_eta2
+dinov2_vits14_reg,layer_03,81,81.0,81,0,209794452.08252612,129283856.86449812,80510595.21802798,1.420548641389815e-16,0.6162405896874822,0.3837594103125178
